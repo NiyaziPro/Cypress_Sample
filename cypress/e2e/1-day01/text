@@ -1,0 +1,33 @@
+css locator 
+
+#id     --> id 
+.class  --> class
+
+[attr='value']
+tag[attr='value']
+
+:nth-of-type(n)   n. index elementini verecek
+:first-of-type
+:last-of-type
+
+>       -> bir alt class a goturecek
+bosluk  -> butun alt classlarina goturecek
+^       -> start with
+$       -> end with
+*       -> contain
+
+
+
+xpath 
+
+//tag[@attr='value']
+(//tag[@attr='value'])[n]    ->  n. index elementini verecek
+//tag[text()='textDegerini']
+//tag[contains(@attr,'partialValue')]
+
+
+
+kisayollar 
+
+shift alt arrow down -> dublicate
+
