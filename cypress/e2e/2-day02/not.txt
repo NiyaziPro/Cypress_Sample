@@ -1,9 +1,0 @@
-https://testcenter.techproeducation.com/index.php?page=checkboxes
-
-describe('', () => {
-    it('', () => {
-      cy.visit('');
-  
-    });
-    
-  });

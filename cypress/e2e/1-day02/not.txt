@@ -1,0 +1,7 @@
+/// <references types='cypress'/>
+
+describe('', () => {
+  it('', () => {
+    
+  });
+});
