@@ -15,10 +15,13 @@ context("Deneme", () => {
     // get(): lacate aliyoruz
     // type(): metin gonderiyoruz (SendKeys)
     // {enter} : ENTER tusuna bas (Keys.ENTER)
+
   });
 
-  it("Search", () => {
+  // skip testi yapmadan gecer
+  it.skip("Search", () => {
     cy.get("#W0wltc > .QS5gu").click();
     cy.get("#APjFqb", { timeout: 3000 }).type("Cypress.io{enter}");
   });
 });
+
