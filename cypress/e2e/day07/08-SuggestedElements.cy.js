@@ -7,6 +7,11 @@ describe("Suggested Elements", () => {
 
         cy.get('#APjFqb').type('Yahoo');
 
+        // 1) YOL
+        //cy.get('#sBQTL > .wM6W7d > span > b').contains('mail login').click()
+
+        // 2) YOL
+        cy.get('li span b').contains('finance').click()
 
     });
   });
