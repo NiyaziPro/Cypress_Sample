@@ -1,7 +1,7 @@
 /// <reference types="cypress"/>
 /// <reference types="cypress-xpath"/>
 
-import data from "..//..//fixtures/credentials.json";
+import data from "../../fixtures/credentials.json";
 
 describe("Login Test ", () => {
   it("Positive Test", () => {
