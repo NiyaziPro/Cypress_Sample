@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// https://www.allovercommerce.com  sitesi icin function'lar
+Cypress.Commands.add("login", (username, password) => {
+  cy.visit("https://allovercommerce.com/");
+  cy.get(".login").click();
+  cy.get("#username").type(username);
+  cy.get("#password").type(password);
+  cy.get("#signin > .woocommerce-form > .woocommerce-button").click();
+});
+
+Cypress.Commands.add("verifyLogin", () => {
+  cy.get(".login > span").should("have.text", "Sign Out");
+});
+
+// Amazon sitesi icin function'lar
+
+Cypress.Commands.add("amazonSearch", (productName) => {
+  cy.visit("https://www.amazon.com/");
+  cy.get("#twotabsearchtextbox").type(productName);
+  cy.get('#nav-search-submit-button').click();
+});
