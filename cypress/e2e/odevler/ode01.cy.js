@@ -18,7 +18,6 @@ describe("Test Cypress Odev 01", () => {
     //3. "SUBMIT" butonuna tıkla
     cy.get('[type="submit"]').click();
     //4. Teşekkür mesajının "Thank You for your Message!" metni olduğunu kontrol et
-    cy.get('h1').should('have.text','Thank You for your Message!');
-
+    cy.get("h1").should("have.text", "Thank You for your Message!");
   });
 });

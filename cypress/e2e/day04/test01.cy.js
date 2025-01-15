@@ -15,7 +15,6 @@ context("Deneme", () => {
     // get(): lacate aliyoruz
     // type(): metin gonderiyoruz (SendKeys)
     // {enter} : ENTER tusuna bas (Keys.ENTER)
-
   });
 
   // skip testi yapmadan gecer
@@ -24,4 +23,3 @@ context("Deneme", () => {
     cy.get("#APjFqb", { timeout: 3000 }).type("Cypress.io{enter}");
   });
 });
-

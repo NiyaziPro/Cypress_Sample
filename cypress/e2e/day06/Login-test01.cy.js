@@ -18,7 +18,10 @@ describe("Koala Resort Hotel", () => {
 
     // ASSERT
 
-    cy.get('#customer_login > .tab > .nav > :nth-child(1) > .nav-link').should('have.text','Sign In');
+    cy.get("#customer_login > .tab > .nav > :nth-child(1) > .nav-link").should(
+      "have.text",
+      "Sign In"
+    );
     // locate edilen yerdeki metinde 'Sign In ' yaziyor mu? Var mi?
 
     //cy.url().should('include','')

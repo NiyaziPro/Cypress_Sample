@@ -59,6 +59,6 @@ describe("Checkboxes", () => {
     ////////////////////////////////
     cy.get('input[type="checkbox"]').click({ multiple: true });
 
-    cy.get('input[type="checkbox"]').parent().should('have.class','checked');
+    cy.get('input[type="checkbox"]').parent().should("have.class", "checked");
   });
 });

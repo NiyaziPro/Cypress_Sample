@@ -7,6 +7,6 @@ describe("Amazon Search", () => {
 
     cy.get("#twotabsearchtextbox").should("have.value", "macbook");
 
-    cy.screenshot()
+    cy.screenshot();
   });
 });

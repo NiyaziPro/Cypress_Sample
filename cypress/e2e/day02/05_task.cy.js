@@ -22,28 +22,26 @@ Beklenen Sonuç:
 Ürün başarıyla sepete eklenir ve doğru ürün sepet sayfasında görüntülenir.
 */
 
+describe("Login and Add to Cart", () => {
+  const url = "https://www.saucedemo.com/";
 
-describe('Login and Add to Cart', () => {
-
-    const url = 'https://www.saucedemo.com/';
-
-    before(()=>{
-        cy.visit(url)
-        cy.get('#user-name').type('standard_user')
-        cy.get('[data-test="password"]').type('secret_sauce')
-        cy.get('[data-test="login-button"]').click()
-    });
-
-
-    it('Assert Login', () => {
-        cy.get('[data-test="title"]').should('have.text','Products')
-        cy.url().should('include','/inventory.html')
-        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click()
-        cy.get('[data-test="shopping-cart-link"]').click()
-        cy.get('[data-test="item-quantity"]').should('have.text','1')
-        cy.get('[data-test="inventory-item-name"]').should('have.text','Sauce Labs Backpack')
-        cy.url().should('include','/cart.html')
-
-    });
-
+  before(() => {
+    cy.visit(url);
+    cy.get("#user-name").type("standard_user");
+    cy.get('[data-test="password"]').type("secret_sauce");
+    cy.get('[data-test="login-button"]').click();
   });
+
+  it("Assert Login", () => {
+    cy.get('[data-test="title"]').should("have.text", "Products");
+    cy.url().should("include", "/inventory.html");
+    cy.get('[data-test="add-to-cart-sauce-labs-backpack"]').click();
+    cy.get('[data-test="shopping-cart-link"]').click();
+    cy.get('[data-test="item-quantity"]').should("have.text", "1");
+    cy.get('[data-test="inventory-item-name"]').should(
+      "have.text",
+      "Sauce Labs Backpack"
+    );
+    cy.url().should("include", "/cart.html");
+  });
+});

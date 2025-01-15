@@ -22,8 +22,6 @@ describe("Small project Test", () => {
     productPage.goToCartPage();
     cartPage.verifyProduct();
     cartPage.verifyProductCount(1);
-    cartPage.verifyProductName('Sauce Labs Backpack');
+    cartPage.verifyProductName("Sauce Labs Backpack");
   });
-
-  
 });
